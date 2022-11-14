@@ -37,9 +37,11 @@ const App = () => {
   }
   }
 
+
   return (
     <>
       <h1>Treasure Hunt Game</h1>
+      <button onClick={() => window.location.reload(false)}>Try again?</button>
       <div className="gameboard">
       {board.map((value, index) => {
         return( <Square 
