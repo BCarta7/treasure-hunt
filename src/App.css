@@ -1,23 +1,37 @@
-h1 {
+* {
   text-align: center;
+  color: red;
+}
+
+.background {
+  background-image: url('https://live.staticflickr.com/8043/8394379683_a49795d0e3_b.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.description {
+  margin-left: 20vh;
+  margin-right: 20vh;
 }
 
 .square {
   height: 200px;
   width: 200px;
-  border: 1px solid black;
   font-size: 150px;
   text-align: center;
+  cursor: pointer;
+  color: rgba(255, 0, 0, 0.612);
 }
 
 .gameboard {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  width: 620px;
+  width: 820px;
   margin: 0 auto;
 }
 
-button {
+.reset {
   display: flex;
   width: 100px;
   height: 50px;
@@ -26,4 +40,5 @@ button {
   font-size: 15px;
   text-align: center;
   align-content: center;
+  color: black
 }

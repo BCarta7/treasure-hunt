@@ -3,8 +3,11 @@ import React from "react"
 const Square = (props) => {
 
   const handleClick = () => {
-    // alert(props.index)
+    if (props.value !== "?" || props.status !== null) {
+     return null
+    } else {
     props.handleGamePlay(props.index)
+    props.minus()} 
   }
   return (
     <>
